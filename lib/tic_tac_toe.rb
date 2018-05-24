@@ -3,9 +3,9 @@ class TicTacToe
     @board = Array.new(9, " ")
   end
   def play()
-    until over?(@board)
-      turn(@board)
-      if draw?(@board)
+    until over?()
+      turn()
+      if draw?()
         break
       end
     end
