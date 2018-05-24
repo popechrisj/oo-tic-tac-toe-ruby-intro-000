@@ -4,10 +4,10 @@ class TicTacToe
   end
   def play()
     until over?(@board)
-    turn(@board)
-    if draw?(@board)
-      break
-    end
+      turn(@board)
+      if draw?(@board)
+        break
+      end
     end
     if won?()
       puts "Congratulations #{winner(@board)}!"
